@@ -128,9 +128,6 @@ gunicorn-error-log
 db.sqlite3
 db copy.sqlite3
 static/
-<<<<<<< HEAD
+
 projeto/settings.py
 
-
-=======
->>>>>>> master
