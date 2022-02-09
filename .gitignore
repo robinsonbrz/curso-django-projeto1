@@ -131,3 +131,6 @@ static/
 
 projeto/settings.py
 
+deploy/*
+
+gunicorn-error-log
