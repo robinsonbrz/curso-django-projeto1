@@ -1,30 +1,15 @@
-{% include 'recipes/partials/head.html' %}
+{% extends 'global/base.html'%}
 
-<body>
-    {% include 'recipes/partials/header.html' %}
-    {% include 'recipes/partials/search.html' %}
+{% block title %}Home | {% endblock title %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-        
-        
-        
-            {% for i in "x"|rjust:"12"|make_list %}
-                {% include 'recipes/partials/recipe.html' %} 
-            {% endfor %}   
-        
-        
-            <div class="recipe recipe-list-item">
-                <div class="recipe-content">
-                {% for i in "x"|rjust:"30"|make_list %}
-                   <p> {{ forloop.counter }} </p>
-                {% endfor %}
-                </div>
-            </div>
+{% block content %}
+    <div class="main-content main-content-list container">
 
-        </div>
-    </main>
-    {% include 'recipes/partials/footer.html' %}
-</body>
+        {% for recipe in recipes %}
+            {% include 'recipes/partials/recipe.html' %} 
+        {% endfor %}
 
-</html>
+
+
+    </div>
+{% endblock content%}
