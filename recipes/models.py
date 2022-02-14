@@ -7,7 +7,8 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=65)
 
-    # Essa função modifica a visualização em Djanngo Admin exibindo o conteudo em name
+    # Essa função modifica a visualização em Djanngo Admin exibindo
+    # o conteudo em name
     # Ao inves de Object 1, object 2
     def __str__(self):
         exibir = f"{ self.id, self.name}"
@@ -32,7 +33,7 @@ class Recipe(models.Model):
     cover = models.ImageField(
         upload_to='recipes/covers/%Y/%m/%d/', blank=True, default='')
     category = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, null=True, blank=True, default=None,
+        Category, on_delete=models.SET_NULL, null=True, blank=True, default=None,  # noqa E501
     )
     author = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True
