@@ -11,7 +11,7 @@ class Category(models.Model):
     # o conteudo em name
     # Ao inves de Object 1, object 2
     def __str__(self):
-        exibir = f"{ self.id, self.name}"
+        exibir = f"{ self.name}"
         return exibir
 
 # Criada a tabela Recipe e
@@ -40,5 +40,5 @@ class Recipe(models.Model):
     )
 
     def __str__(self):
-        exibir = f"{ self.id, self.title}"
+        exibir = f"{ self.title}"
         return exibir
