@@ -250,7 +250,8 @@ h6 {
     justify-content: space-between;
     background: var(--color-primary-dark);
     color: var(--color-white);
-    padding: var(--spacing-gutter-large);
+    padding: 1rem;
+    
 }
 
 
