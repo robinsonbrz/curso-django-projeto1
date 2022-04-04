@@ -11,7 +11,9 @@ PER_PAGE = int(os.environ.get('PER_PAGE', 6))
 
 
 class RecipeListViewBase(ListView):
+
     model = Recipe
+
     context_object_name = 'recipes'
     ordering = ['-id']
     template_name = 'recipes/pages/home.html'
@@ -97,6 +99,7 @@ class RecipeListViewSearch(RecipeListViewBase):
 
 class RecipeDetail(DetailView):
     model = Recipe
+
     context_object_name = 'recipe'
     template_name = 'recipes/pages/recipe-view.html'
 

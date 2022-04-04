@@ -130,7 +130,7 @@ db.sqlite3
 db copy.sqlite3
 /static
 
-projeto/settings.py
+*/settings.py
 
 deploy/*
 

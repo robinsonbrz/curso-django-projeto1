@@ -12,6 +12,25 @@ function my_scope() {
         }
       });
     }
+
+  console.log("carregamento")
+
+    // carregamento de thumbs
+    // descontinuado
+    /*
+    $(".recipe-img-th").each(function() {            
+      console.log("####")
+      a =$(this).attr("alt").replace("15/","15/th-")
+
+      console.log(a)	
+    $(this).attr("src", a)
+    $(this).attr("alt", "")
+   });
+   */
+
+
+
+
   }
   
   my_scope();
